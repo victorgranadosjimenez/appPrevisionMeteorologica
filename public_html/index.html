@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREA 6</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="index.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <h1>Aplicación del tiempo</h1>
+    </header>
+
+    <div id="content">
+    
+    <!--un input text-->
+    <!--En el input de entrada vamos a tener una cadena de texto. Si no contiene ninguna "," coma, 
+        pues entonces vamos a suponer que la localización está en España (habría que añadir ,es).-->
+    <input type="text" id="localizacion" placeholder="introduce ciudad"/>
+
+    <!-- botones-->
+    <!--El primer botón es un botón va a mostrar la previsión del tiempo de hoy a la hora elegida.-->
+    <button id="button1">Tiempo actual</button>
+
+    <!--El segundo va a mostrar el tiempo de los prox. 10 días remarcando el día actual
+        Se requieren 2 consultas, una para el día de hoy y otra con inicio-fin (10 días) .-->
+    <button id="button2">Prox. 10 días</button>
+
+    <!--El tercero va a averiguar la posición gps actual y mostrarte la petición y el mapa que nos proporciona Visual Crossing. 
+        Mapa con GeoDB Cities pero con longitud y latitud que nos da Visual Crossing.-->
+    <button id="button3">Mostrar mapa</button>
+
+    </div>
+
+    <div id="resultados">
+
+        <div id="today">
+            <h2>Cambia el contenido</h2>
+        </div>
+        <div id="next10days">
+            <h2>Cambia el contenido</h2>
+        </div>
+        <div id="map">
+            <h2>Cambia el contenido</h2>
+        </div>
+
+
+    </div>
+
+    
+
+
+</body>
+
+
+
+
+
+<!--
+Las consultas se deben realizar en unidades métricas.
+jQuery es necesario para la práctica. Sobretodo para la visualización. Una de las consultas será con  API fetch,  
+la otra con $.ajax de jQuery o Axios, pero no aseguro que este último vaya a estar nombrado en el examen. 
+Al utilizar mapas vas a tener que usar async await. Si no no se actualizará algunas veces el contenido.
+
+-->
+
+
+
+
+</html>
+
+
+
+
+
+
+
